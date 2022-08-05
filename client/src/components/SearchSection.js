@@ -1,5 +1,6 @@
 import { FaBed, FaCalendarAlt } from 'react-icons/fa';
 import { IoIosMan } from 'react-icons/io';
+import { Link } from "react-router-dom";
 
 function Search() {
   return (
@@ -17,9 +18,14 @@ function Search() {
                 <IoIosMan size={22} />
                 <span className="tracking-tight">1 adult - 0 children - 1 room</span>
             </button>
-            <button className="bg-blue-700 text-white border rounded-sm py-2 px-3 tracking-tight">
+            <Link to="/hotels">
+                <button  className="bg-blue-700 text-white border rounded-sm py-2 px-3 tracking-tight">
+                    Search
+                </button>
+            </Link>
+            {/* <button  className="bg-blue-700 text-white border rounded-sm py-2 px-3 tracking-tight">
                 Search
-            </button>
+            </button> */}
         </div>
     </div>
   )

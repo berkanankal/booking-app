@@ -1,28 +1,21 @@
-import Cities from './components/Cities';
-import Footer from './components/Footer';
-import GuestLoves from './components/GuestLoves';
+import { Routes, Route, Link } from "react-router-dom";
+import Home from './pages/Home';
+import Hotels from './pages/Hotels';
 import Header from './components/Header';
 import HeaderSection from './components/HeaderSection';
-import SearchSection from './components/SearchSection';
-import Subscribe from './components/Subscribe';
-import Type from './components/Type';
 
 function App() {
   return (
-    <div className="main">
+    <>
       <div className="bg-blue-900">
-          <Header />
-          <HeaderSection />
-          <SearchSection />
+        <Header />
       </div>
-      <div className="content">
-          <Cities />
-          <Type />
-          <GuestLoves />
-          <Subscribe />
-          <Footer />
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/hotels" element={<Hotels />} />
+      </Routes>
+    </>
+    
   );
 }
 
