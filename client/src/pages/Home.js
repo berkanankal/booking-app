@@ -1,7 +1,6 @@
 import Cities from '../components/Cities';
 import Footer from '../components/Footer';
 import GuestLoves from '../components/GuestLoves';
-import Header from '../components/Header';
 import HeaderSection from '../components/HeaderSection';
 import SearchSection from '../components/SearchSection';
 import Subscribe from '../components/Subscribe';
