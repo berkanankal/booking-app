@@ -1,4 +1,5 @@
 function Footer() {
+    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
   return (
     <div className="container mx-auto mt-10">
         <div className="flex flex-row justify-between">
