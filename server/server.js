@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const connectDatabase = require("./helpers/database/connectDatabase");
+const routes = require("./routes");
 
 dotenv.config({ path: "./config/env/config.env" });
 const PORT = process.env.PORT || 5000;
@@ -12,6 +13,8 @@ app.get("/", (req, res) => {
     message: "Welcome to the API",
   });
 });
+
+app.use("/api", routes);
 
 app.listen(PORT, () => {
   connectDatabase();
